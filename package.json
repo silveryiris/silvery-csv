@@ -1,0 +1,31 @@
+{
+  "name": "silvery-csv",
+  "version": "0.0.1",
+  "description": "Simple csv convert to array",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/silveryiris/silvery-csv.git"
+  },
+  "main": "dist/SilveryCSV.cjs.js",
+  "module": "dist/SilveryCSV.esm.js",
+  "scripts": {
+    "test": "mocha -r esm -t 5000",
+    "build": "rimraf ./dist/** && rollup -c",
+    "prepack": "npm run build"
+  },
+  "author": "Wen Wei , Chang",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "chai": "^4.2.0",
+    "eslint": "^6.0.1",
+    "esm": "^3.2.25",
+    "mocha": "^6.1.4",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.17.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "terser": "^4.1.2"
+  },
+  "dependencies": {}
+}
